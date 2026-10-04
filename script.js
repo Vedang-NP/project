@@ -538,7 +538,7 @@ const productsData = {
             id: 301,
             name: "BMW R 1250 GS",
             price: 17495,
-            image: motorcycleImages.adventure,
+            image: "images/category-adventure.jpg",
             description: "The BMW R 1250 GS is the best-selling large-capacity motorcycle in many European countries and is considered the benchmark in the adventure touring category.",
             specs: [
                 "Engine: 1254cc flat-twin",
@@ -597,7 +597,7 @@ const productsData = {
             id: 401,
             name: "Harley-Davidson Electra Glide",
             price: 21999,
-            image: motorcycleImages.cruiser,
+            image: "images/category-cruiser.jpg",
             description: "The Harley-Davidson Electra Glide is a classic touring motorcycle known for its comfort, style, and long-distance capabilities.",
             specs: [
                 "Engine: 1868cc V-Twin",
@@ -611,7 +611,7 @@ const productsData = {
             id: 402,
             name: "BMW K 1600 GTL",
             price: 24999,
-            image: motorcycleImages.bmwS1000RR,
+            image: "images/category-touring.jpg",
             description: "The BMW K 1600 GTL is the ultimate luxury touring motorcycle with a powerful inline-six engine and premium features.",
             specs: [
                 "Engine: 1649cc inline-six",
@@ -625,7 +625,7 @@ const productsData = {
             id: 403,
             name: "Honda Gold Wing",
             price: 23999,
-            image: motorcycleImages.cruiser,
+            image: "images/category-touring.jpg",
             description: "The Honda Gold Wing is the benchmark for luxury touring motorcycles, offering unparalleled comfort and advanced features.",
             specs: [
                 "Engine: 1833cc flat-six",
@@ -657,7 +657,7 @@ const featuredProducts = [
         id: 1,
         name: "Kawasaki H2R",
         price: 55000,
-        image: "https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80",
+        image: "images/featured-kawasaki-h2r.jpg",
         description: "Supercharged beast with 310 horsepower, carbon fiber body, and track-focused aerodynamics.",
         specs: [
             "Engine: 998cc supercharged inline-four",
@@ -671,7 +671,7 @@ const featuredProducts = [
         id: 2,
         name: "BMW S1000RR",
         price: 16995,
-        image: motorcycleImages.hondaCBR,
+        image: "images/featured-bmw-s1000rr.jpg",
         description: "Precision engineering with 207 horsepower, dynamic traction control, and race ABS.",
         specs: [
             "Engine: 999cc inline-four",
@@ -685,7 +685,7 @@ const featuredProducts = [
         id: 3,
         name: "Ducati Panigale V4",
         price: 23995,
-        image: motorcycleImages.ktmAdventure,
+        image: "images/featured-ducati-v4.jpg",
         description: "Italian masterpiece with 214 horsepower, advanced electronics, and MotoGP-derived technology.",
         specs: [
             "Engine: 1103cc V4",
@@ -1154,25 +1154,23 @@ const collectionProducts = [
     }
 
     // Video fallback handling
-document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('heroVideo');
     const videoBackground = document.querySelector('.video-background');
    
     if (video) {
         video.addEventListener('error', function() {
             // If video fails to load, show fallback
-            videoBackground.classList.add('no-video');
+            if (videoBackground) videoBackground.classList.add('no-video');
         });
        
         // Check if video can play
         video.addEventListener('canplay', function() {
-            videoBackground.classList.remove('no-video');
+            if (videoBackground) videoBackground.classList.remove('no-video');
         });
        
-        // For mobile devices, you might want to handle autoplay restrictions in future sarrrrrr
+        // For mobile devices, handle play interaction
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-        if (isMobile) {
-            // Add a play button for mobile devices, this is also for future sarrrrr
+        if (isMobile && videoBackground) {
             const playButton = document.createElement('button');
             playButton.innerHTML = '▶ Play Video';
             playButton.className = 'mobile-play-btn';
@@ -1196,7 +1194,6 @@ document.addEventListener('DOMContentLoaded', function() {
             videoBackground.appendChild(playButton);
         }
     }
-});
 
     // Initialize the page
     initCollectionGrid();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header id="header">
@@ -20,7 +24,7 @@
                 </div>
                 <div class="logo-text">WONDERER <span>RIDES</span></div>
             </div>
-           
+
             <nav>
                 <ul>
                     <li><a href="#" class="nav-link" data-target="home">Home</a></li>
@@ -31,7 +35,7 @@
                     <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
                 </ul>
             </nav>
-           
+
             <div class="header-actions">
                 <button class="action-btn" id="loginBtn">
                     <i class="fas fa-user"></i>
@@ -45,27 +49,28 @@
     </header>
 
     <!-- Hero Section -->
-<section class="hero" id="home">
-    <!-- Video Background -->
-    <div class="video-background">
-        <video autoplay muted loop playsinline id="heroVideo">
-            <source src="C:\Users\Vedang\Desktop\bike/2024 Yamaha MT-09 SP_ Master of Darkness.mp4" type="video/mp4">
-            <source src="C:\Users\Vedang\Desktop\bike/2024 Yamaha MT-09 SP_ Master of Darkness.mp4" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-        <!-- Fallback image if video doesn't load -->
-        <div class="video-fallback"></div>
-    </div>
-   
-    <!-- Video Overlay for better text readability -->
-    <div class="video-overlay"></div>
-   
-    <div class="hero-content fade-in">
-        <h1>RIDE THE WIND WITH STYLE</h1>
-        <p>Discover the finest collection of premium motorcycles and accessories for the ultimate riding experience. Explore our curated selection and find your perfect machine.</p>
-        <button class="btn" id="exploreBtn">Explore Collection</button>
-    </div>
-</section>
+    <section class="hero" id="home">
+        <!-- Video Background -->
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="heroVideo">
+                <source src="2024 Yamaha MT-09 SP_ Master of Darkness.mp4" type="video/mp4">
+                <source src="../2024 Yamaha MT-09 SP_ Master of Darkness.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Fallback image if video doesn't load -->
+            <div class="video-fallback"></div>
+        </div>
+
+        <!-- Video Overlay for better text readability -->
+        <div class="video-overlay"></div>
+
+        <div class="hero-content fade-in">
+            <h1>RIDE THE WIND WITH STYLE</h1>
+            <p>Discover the finest collection of premium motorcycles and accessories for the ultimate riding experience.
+                Explore our curated selection and find your perfect machine.</p>
+            <button class="btn" id="exploreBtn">Explore Collection</button>
+        </div>
+    </section>
 
     <!-- Featured Motorcycles -->
     <section class="featured" id="featured">
@@ -73,11 +78,12 @@
             <h2>Featured Motorcycles</h2>
             <p>Explore our premium selection of high-performance motorcycles designed for true enthusiasts</p>
         </div>
-       
+
         <div class="products">
             <div class="product-card fade-in" data-id="1">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80" alt="Kawasaki H2R">
+                    <img src="images/featured-kawasaki-h2r.jpg"
+                        alt="Kawasaki H2R">
                 </div>
                 <div class="product-info">
                     <h3>Kawasaki H2R</h3>
@@ -85,10 +91,11 @@
                     <button class="view-details">View Details</button>
                 </div>
             </div>
-           
+
             <div class="product-card fade-in" data-id="2">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80">
+                    <img src="images/featured-bmw-s1000rr.jpg"
+                        alt="BMW S1000RR">
                 </div>
                 <div class="product-info">
                     <h3>BMW S1000RR</h3>
@@ -96,10 +103,11 @@
                     <button class="view-details">View Details</button>
                 </div>
             </div>
-           
+
             <div class="product-card fade-in" data-id="3">
                 <div class="product-img">
-                    <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80" alt="Ducati Panigale V4">
+                    <img src="images/featured-ducati-v4.jpg"
+                        alt="Ducati Panigale V4">
                 </div>
                 <div class="product-info">
                     <h3>Ducati Panigale V4</h3>
@@ -116,34 +124,38 @@
             <h2>Browse Categories</h2>
             <p>Find your perfect ride by exploring our specialized categories</p>
         </div>
-       
+
         <div class="category-grid">
             <div class="category-card fade-in" data-category="sport">
-                <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80" alt="Sport Bikes">
+                <img src="images/category-sport.jpg"
+                    alt="Sport Bikes">
                 <div class="category-overlay">
                     <h3>Sport Bikes</h3>
                     <p>High-performance machines</p>
                 </div>
             </div>
-           
+
             <div class="category-card fade-in" data-category="cruiser">
-                <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80" alt="Cruisers">
+                <img src="images/category-cruiser.jpg"
+                    alt="Cruisers">
                 <div class="category-overlay">
                     <h3>Cruisers</h3>
                     <p>Style and comfort</p>
                 </div>
             </div>
-           
+
             <div class="category-card fade-in" data-category="adventure">
-                <img src="https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?auto=format&fit=crop&w=1200&q=80" alt="Adventure">
+                <img src="images/category-adventure.jpg"
+                    alt="Adventure">
                 <div class="category-overlay">
                     <h3>Adventure</h3>
                     <p>Go anywhere, do anything</p>
                 </div>
             </div>
-           
+
             <div class="category-card fade-in" data-category="touring">
-                <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Touring">
+                <img src="images/category-touring.jpg"
+                    alt="Touring">
                 <div class="category-overlay">
                     <h3>Touring</h3>
                     <p>Long-distance comfort</p>
@@ -203,7 +215,7 @@
             <h2>Motorcycle Collection</h2>
             <p>Browse our extensive collection of premium motorcycles</p>
         </div>
-       
+
         <div class="collection-grid">
             <!-- Collection items will be loaded here -->
         </div>
@@ -215,7 +227,7 @@
             <h2>Contact Us</h2>
             <p>Have questions? Get in touch with our team</p>
         </div>
-       
+
         <div class="contact-container">
             <div class="contact-info">
                 <div class="contact-item fade-in">
@@ -227,7 +239,7 @@
                         <p>its private</p>
                     </div>
                 </div>
-               
+
                 <div class="contact-item fade-in">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
@@ -237,7 +249,7 @@
                         <p>+91 8208304073</p>
                     </div>
                 </div>
-               
+
                 <div class="contact-item fade-in">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
@@ -247,7 +259,7 @@
                         <p>info@wondererrides.com</p>
                     </div>
                 </div>
-               
+
                 <div class="contact-item fade-in">
                     <div class="contact-icon">
                         <i class="fas fa-clock"></i>
@@ -258,29 +270,29 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="contact-form fade-in">
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" placeholder="Your Name" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" placeholder="Your Email" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" placeholder="Subject" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
-                   
+
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -293,16 +305,22 @@
             <h2>About Wonderer Rides</h2>
             <p>Our story and passion for motorcycles</p>
         </div>
-       
+
         <div class="about-container fade-in">
             <div class="about-image">
-                <img src="C:/Users/AtifAli Kalawant/Downloads/download.jpg" alt="Our Showroom">
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80"
+                    alt="Our Showroom">
             </div>
             <div class="about-content">
                 <h2>Our Journey</h2>
-                <p>Founded in 2010, Wonderer Rides began with a simple passion for motorcycles and the freedom they represent. What started as a small garage operation has grown into a premier destination for motorcycle enthusiasts.</p>
-                <p>Our mission is to provide riders with the highest quality motorcycles, parts, and accessories, backed by unparalleled customer service. We believe every ride should be an adventure, and we're here to help you make the most of yours.</p>
-                <p>With over 15 years of experience, our team of expert mechanics and riders is dedicated to helping you find the perfect machine and keeping it in top condition for years to come.</p>
+                <p>Founded in 2010, Wonderer Rides began with a simple passion for motorcycles and the freedom they
+                    represent. What started as a small garage operation has grown into a premier destination for
+                    motorcycle enthusiasts.</p>
+                <p>Our mission is to provide riders with the highest quality motorcycles, parts, and accessories, backed
+                    by unparalleled customer service. We believe every ride should be an adventure, and we're here to
+                    help you make the most of yours.</p>
+                <p>With over 15 years of experience, our team of expert mechanics and riders is dedicated to helping you
+                    find the perfect machine and keeping it in top condition for years to come.</p>
             </div>
         </div>
     </section>
@@ -312,7 +330,8 @@
         <div class="footer-content">
             <div class="footer-column fade-in">
                 <h3>Wonderer Rides</h3>
-                <p>Your premier destination for premium motorcycles and accessories. Experience the thrill of the ride with us.</p>
+                <p>Your premier destination for premium motorcycles and accessories. Experience the thrill of the ride
+                    with us.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -320,7 +339,7 @@
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-           
+
             <div class="footer-column fade-in">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
@@ -332,7 +351,7 @@
                     <li><a href="#" class="nav-link" data-target="contact">Contact</a></li>
                 </ul>
             </div>
-           
+
             <div class="footer-column fade-in">
                 <h3>Services</h3>
                 <ul class="footer-links">
@@ -344,7 +363,7 @@
                     <li><a href="#">Financing</a></li>
                 </ul>
             </div>
-           
+
             <div class="footer-column fade-in">
                 <h3>Newsletter</h3>
                 <p>Subscribe to our newsletter for the latest updates and offers</p>
@@ -356,7 +375,7 @@
                 </form>
             </div>
         </div>
-       
+
         <div class="copyright fade-in">
             <p>&copy; 2023 Wonderer Rides. All rights reserved.</p>
         </div>
@@ -366,29 +385,29 @@
     <div class="modal" id="authModal">
         <div class="modal-content">
             <span class="close-btn" id="closeModal">&times;</span>
-           
+
             <div class="modal-header">
                 <h2>Welcome to Wonderer Rides</h2>
                 <p>Sign in or create an account to continue</p>
             </div>
-           
+
             <div class="tabs">
                 <button class="tab-btn active" data-tab="login">Login</button>
                 <button class="tab-btn" data-tab="signup">Sign Up</button>
             </div>
-           
+
             <div class="tab-content active" id="loginTab">
                 <form id="loginForm">
                     <div class="form-group">
                         <label for="loginEmail">Email Address</label>
                         <input type="email" id="loginEmail" placeholder="Enter your email" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
                         <input type="password" id="loginPassword" placeholder="Enter your password" required>
                     </div>
-                   
+
                     <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <input type="checkbox" id="remember">
@@ -396,10 +415,10 @@
                         </div>
                         <a href="#" style="color: var(--primary);">Forgot password?</a>
                     </div>
-                   
+
                     <button type="submit" class="btn" style="width: 100%;">Login</button>
                 </form>
-               
+
                 <p style="text-align: center; margin-top: 20px; color: #aaa;">Or login with</p>
                 <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
                     <button type="button" class="social-login-btn" data-provider="facebook">
@@ -408,16 +427,37 @@
                     <button type="button" class="social-login-btn" data-provider="google">
                         <i class="fab fa-google"></i> Google
                     </button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="signupTab">
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+
                     <div class="form-group">
                         <label for="signupConfirm">Confirm Password</label>
                         <input type="password" id="signupConfirm" placeholder="Confirm your password" required>
                     </div>
-                   
+
                     <div class="form-group">
                         <input type="checkbox" id="terms" required>
-                        <label for="terms">I agree to the <a href="#" style="color: var(--primary);">Terms and Conditions</a></label>
+                        <label for="terms">I agree to the <a href="#" style="color: var(--primary);">Terms and
+                                Conditions</a></label>
                     </div>
-                   
+
                     <button type="submit" class="btn" style="width: 100%;">Create Account</button>
                 </form>
             </div>
@@ -440,11 +480,11 @@
             <h2>Your Cart</h2>
             <span class="close-btn" id="closeCart">&times;</span>
         </div>
-       
+
         <div class="cart-items">
             <!-- Cart items will be added here dynamically -->
         </div>
-       
+
         <div class="cart-footer">
             <div class="cart-total">
                 <span>Total:</span>
@@ -456,5 +496,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
